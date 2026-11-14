@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 ACLS 臨床核心指引全攻略隨身一卡包 | 專師 曾妍鳳 製</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -32,10 +34,13 @@
         }
     </script>
     <style>
+        /* APA 7th Edition 標準懸垂縮排 (Hanging Indent) */
         .apa-citation {
             padding-left: 2rem !important;
             text-indent: -2rem !important;
         }
+
+        /* ===== 全局防盜防複製系統 ===== */
         body {
             -webkit-user-select: none !important;
             -moz-user-select: none !important;
@@ -43,6 +48,7 @@
             user-select: none !important;
             -webkit-touch-callout: none !important;
         }
+
         img {
             -webkit-user-drag: none !important;
             -khtml-user-drag: none !important;
@@ -51,6 +57,7 @@
             user-drag: none !important;
             pointer-events: none !important;
         }
+
         @media print {
             body {
                 background: white !important;
@@ -88,6 +95,7 @@
 </head>
 <body class="bg-clinical-dark text-slate-100 font-sans antialiased min-h-screen py-4 px-2 sm:px-4 select-none">
 
+    <!-- 頂部浮動工具列 -->
     <header class="no-print max-w-4xl mx-auto mb-4 flex flex-wrap items-center justify-between gap-2 bg-clinical-card border border-clinical-border px-4 py-2.5 rounded-2xl shadow-xl">
         <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
@@ -103,8 +111,10 @@
         </div>
     </header>
 
+    <!-- 一卡包主容器 -->
     <main class="max-w-4xl mx-auto space-y-4">
 
+        <!-- ================= 卡片主標頭與師資作者資訊 ================= -->
         <section class="print-card bg-clinical-card border-2 border-cyan-500/40 rounded-3xl p-4 sm:p-5 shadow-2xl relative overflow-hidden">
             <div class="absolute -top-12 -right-12 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -126,6 +136,7 @@
                     </p>
                 </div>
 
+                <!-- 師資專業認證徽章 -->
                 <div class="shrink-0 bg-slate-900/90 border border-slate-700/80 rounded-2xl p-3 flex items-center gap-3 shadow-md">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-400 flex items-center justify-center text-white text-lg font-black shadow-inner">
                         <i class="fa-solid fa-user-doctor"></i>
@@ -147,6 +158,7 @@
                 </div>
             </div>
 
+            <!-- 臨床開場共通口訣速查 -->
             <div class="mt-3.5 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                 <div class="bg-cyan-950/30 border border-cyan-800/60 rounded-xl p-2.5 flex items-center gap-2.5">
                     <span class="w-7 h-7 rounded-lg bg-cyan-900 text-cyan-300 flex items-center justify-center font-black text-xs shrink-0">
@@ -167,6 +179,7 @@
             </div>
         </section>
 
+        <!-- ================= 單元一：致死性心律二分法與急救流程 ================= -->
         <section class="print-card bg-clinical-card border border-clinical-border rounded-3xl p-4 sm:p-5 shadow-xl space-y-3.5">
             <div class="flex items-center justify-between border-b border-clinical-border pb-2.5">
                 <div class="flex items-center gap-2">
@@ -177,6 +190,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs">
+                <!-- 可電擊：假死人 -->
                 <div class="p-3.5 rounded-2xl bg-rose-950/20 border-2 border-rose-700/60 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-2 border-b border-rose-900/60 mb-2">
@@ -206,6 +220,7 @@
                     </div>
                 </div>
 
+                <!-- 不可電擊：真死人 -->
                 <div class="p-3.5 rounded-2xl bg-slate-900/90 border-2 border-slate-700 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-2 border-b border-slate-700 mb-2">
@@ -234,16 +249,18 @@
             </div>
         </section>
 
+        <!-- ================= 單元二：5H 5T 可逆原因矩陣 ================= -->
         <section class="print-card bg-clinical-card border border-clinical-border rounded-3xl p-4 sm:p-5 shadow-xl space-y-3">
             <div class="flex items-center justify-between border-b border-clinical-border pb-2.5">
                 <div class="flex items-center gap-2">
                     <span class="w-6 h-6 rounded-lg bg-teal-950 text-teal-400 border border-teal-800 flex items-center justify-center text-xs font-bold">2</span>
-                    <h2 class="text-sm sm:text-base font-extrabold text-white tracking-tight">5H & 5T：尋找可逆急救病因 (Reversible Causes)</h2>
+                    <h2 class="text-sm sm:text-base font-extrabold text-white tracking-tight">5H &amp; 5T：尋找可逆急救病因 (Reversible Causes)</h2>
                 </div>
-                <span class="text-[11px] text-teal-300 font-semibold">Cleveland Clinic & AHA 2025 對照</span>
+                <span class="text-[11px] text-teal-300 font-semibold">Cleveland Clinic &amp; AHA 2025 對照</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                <!-- 5H 生理代謝因素 -->
                 <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-teal-800/50">
                     <div class="font-extrabold text-teal-300 text-xs flex items-center gap-1.5 mb-2 border-b border-slate-800 pb-1.5">
                         <i class="fa-solid fa-flask"></i> 5H（生理與代謝因素）
@@ -257,6 +274,7 @@
                     </ul>
                 </div>
 
+                <!-- 5T 物理創傷與機械因素 -->
                 <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-800/50">
                     <div class="font-extrabold text-amber-300 text-xs flex items-center gap-1.5 mb-2 border-b border-slate-800 pb-1.5">
                         <i class="fa-solid fa-stethoscope"></i> 5T（物理創傷與栓塞因素）
@@ -272,6 +290,7 @@
             </div>
         </section>
 
+        <!-- ================= 單元三：ROSC 自主循環恢復與復甦後全方位照護核心 ================= -->
         <section class="print-card bg-clinical-card border-2 border-teal-500/60 rounded-3xl p-4 sm:p-5 shadow-2xl space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-clinical-border pb-3">
                 <div class="flex items-center gap-2">
@@ -291,7 +310,9 @@
                 </div>
             </div>
 
+            <!-- ROSC 立即處置黃金 10 分鐘 4 大基柱 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 text-xs">
+                <!-- 1. 呼吸道與氧合通氣 -->
                 <div class="p-3 rounded-2xl bg-slate-900 border border-teal-800/40 flex flex-col justify-between">
                     <div>
                         <div class="font-extrabold text-cyan-300 flex items-center gap-1.5 mb-1.5">
@@ -308,14 +329,15 @@
                     </div>
                 </div>
 
+                <!-- 2. 血液動力學 MAP ≥ 65 -->
                 <div class="p-3 rounded-2xl bg-slate-900 border border-teal-800/40 flex flex-col justify-between">
                     <div>
                         <div class="font-extrabold text-rose-300 flex items-center gap-1.5 mb-1.5">
                             <i class="fa-solid fa-heart-pulse"></i> 2. 血液動力學目標
                         </div>
                         <ul class="text-[11px] text-slate-300 space-y-1">
-                            <li>• <strong>血壓目標：</strong><span class="font-mono text-rose-300 font-black">MAP ≥ 65 mmHg</span> 或 SBP ≥ 90 mmHg。</li>
-                            <li>• <strong>第一線升壓劑：</strong>Norepinephrine (0.1–0.5 mcg/kg/min) 滴注，或 Epinephrine (2–10 mcg/min)。</li>
+                            <li>• <strong>血壓目標：</strong><span class="font-mono text-rose-300 font-black">MAP ≥ 65 mmHg</span>。</li>
+                            <li>• <strong>升壓劑治療：</strong>2025 指引未指定特定首選藥物，依臨床休克型態選用升壓劑（如 Norepinephrine、Epinephrine 或 Dopamine）連續滴注維持灌流。</li>
                             <li>• 輸液給予晶體溶液（維持滿意灌流指標）。</li>
                         </ul>
                     </div>
@@ -324,6 +346,7 @@
                     </div>
                 </div>
 
+                <!-- 3. TTM 目標體溫控制 -->
                 <div class="p-3 rounded-2xl bg-slate-900 border border-teal-800/40 flex flex-col justify-between">
                     <div>
                         <div class="font-extrabold text-amber-300 flex items-center gap-1.5 mb-1.5">
@@ -341,6 +364,7 @@
                     </div>
                 </div>
 
+                <!-- 4. 神經生物標記與診斷 -->
                 <div class="p-3 rounded-2xl bg-slate-900 border border-teal-800/40 flex flex-col justify-between">
                     <div>
                         <div class="font-extrabold text-purple-300 flex items-center gap-1.5 mb-1.5">
@@ -358,6 +382,7 @@
                 </div>
             </div>
 
+            <!-- ROSC 後冠狀動脈介入治療 (PCI) 與病因鑑別決策樹 -->
             <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-teal-900/60 text-xs">
                 <div class="font-extrabold text-teal-300 mb-2 flex items-center gap-1.5">
                     <i class="fa-solid fa-code-branch"></i> ROSC 後緊急心導管 (PCI) 決策矩陣（2025 指引重大轉折點）：
@@ -392,6 +417,7 @@
             </div>
         </section>
 
+        <!-- ================= 單元四：心搏過速與同步整流 ================= -->
         <section class="print-card bg-clinical-card border-2 border-amber-500/60 rounded-3xl p-4 sm:p-5 shadow-2xl space-y-3.5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-clinical-border pb-3">
                 <div class="flex items-center gap-2">
@@ -411,6 +437,7 @@
                 </div>
             </div>
 
+            <!-- 三步驟與整流對應表 -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                 <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300">
                     <div class="font-bold text-amber-300 mb-0.5">步驟 1：評估病患 (150+ bpm)</div>
@@ -426,6 +453,7 @@
                 </div>
             </div>
 
+            <!-- 能量矩陣表 -->
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs border-collapse">
                     <thead>
@@ -472,27 +500,30 @@
             </div>
         </section>
 
+        <!-- ================= 單元五：成人有脈搏心搏過緩處理流程 ================= -->
         <section class="print-card bg-clinical-card border border-clinical-border rounded-3xl p-4 sm:p-5 shadow-xl space-y-3.5">
             <div class="flex items-center justify-between border-b border-clinical-border pb-2.5">
                 <div class="flex items-center gap-2">
                     <span class="w-6 h-6 rounded-lg bg-cyan-950 text-cyan-400 border border-cyan-800 flex items-center justify-center text-xs font-bold">5</span>
                     <h2 class="text-sm sm:text-base font-extrabold text-white tracking-tight">成人脈搏心搏過緩處理流程 (Bradycardia With a Pulse)</h2>
                 </div>
-                <span class="text-[11px] font-mono text-cyan-300">HR < 50 bpm 關鍵評估</span>
+                <span class="text-[11px] font-mono text-cyan-300">HR &lt; 50 bpm 關鍵評估</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                <!-- 關鍵評估 -->
                 <div class="p-3 rounded-2xl bg-slate-900 border border-slate-800">
                     <div class="font-bold text-cyan-300 mb-1 flex items-center gap-1.5">
                         <i class="fa-solid fa-heart-pulse"></i> 1. 關鍵評估
                     </div>
                     <ul class="space-y-1 text-slate-300 text-[11px]">
-                        <li>• 確認心搏過緩（心跳通常 <strong>< 50/分鐘</strong>）。</li>
+                        <li>• 確認心搏過緩（心跳通常 <strong>&lt; 50/分鐘</strong>）。</li>
                         <li>• 評估是否存在五大不穩定徵象：低血壓、急性意識改變、休克徵象、缺血性胸痛、急性心衰竭。</li>
                         <li>• <strong>若無不穩定徵象</strong>：監測與觀察，給予氧氣，持續找病因（心肌缺血、高血鉀、藥物中毒如 β-blocker/CCB/Digoxin）。</li>
                     </ul>
                 </div>
 
+                <!-- 第一線治療 -->
                 <div class="p-3 rounded-2xl bg-amber-950/20 border border-amber-800/60">
                     <div class="font-bold text-amber-300 mb-1 flex items-center gap-1.5">
                         <i class="fa-solid fa-syringe"></i> 2. 第一線治療（不穩定時）
@@ -508,6 +539,7 @@
                     </div>
                 </div>
 
+                <!-- 第二線治療 -->
                 <div class="p-3 rounded-2xl bg-purple-950/20 border border-purple-800/60">
                     <div class="font-bold text-purple-300 mb-1 flex items-center gap-1.5">
                         <i class="fa-solid fa-bolt"></i> 3. 第二線治療（Atropine 無效時）
@@ -522,6 +554,7 @@
             </div>
         </section>
 
+        <!-- ================= 單元六：參考文獻 (APA 7th Edition) ================= -->
         <section class="print-card bg-clinical-card border border-slate-700/80 rounded-3xl p-4 sm:p-5 shadow-xl space-y-3">
             <div class="flex items-center gap-2 mb-1">
                 <span class="w-6 h-6 rounded-lg bg-indigo-950 text-indigo-400 flex items-center justify-center text-xs font-bold">
@@ -531,20 +564,24 @@
             </div>
 
             <div class="text-[11px] text-slate-300 space-y-3.5 leading-relaxed bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 font-sans">
+                <!-- 1. AHA Part 9 Guidelines -->
                 <div class="apa-citation">
-                    Wigginton, J. G., Agarwal, S., Bartos, J. A., Coute, R. A., Drennan, I. R., Haamid, A., Kudenchuk, P. J., Link, M. S., Panchal, A. R., Pelter, M. M., Del Rios, M., Rodriguez, A. J., Perman, S. M., Sanko, S., Kotini-Shah, P., & Kurz, M. C. (2025). Part 9: Adult advanced life support: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care. <em class="text-cyan-300">Circulation</em>, <em class="text-cyan-300">152</em>(16_Suppl_2), S538–S577. <a href="https://doi.org/10.1161/CIR.0000000000001376" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline hover:text-cyan-300 break-all font-mono">https://doi.org/10.1161/CIR.0000000000001376</a>
+                    Wigginton, J. G., Agarwal, S., Bartos, J. A., Coute, R. A., Drennan, I. R., Haamid, A., Kudenchuk, P. J., Link, M. S., Panchal, A. R., Pelter, M. M., Del Rios, M., Rodriguez, A. J., Perman, S. M., Sanko, S., Kotini-Shah, P., &amp; Kurz, M. C. (2025). Part 9: Adult advanced life support: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care. <em class="text-cyan-300">Circulation</em>, <em class="text-cyan-300">152</em>(16_Suppl_2), S538–S577. <a href="https://doi.org/10.1161/CIR.0000000000001376" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline hover:text-cyan-300 break-all font-mono">https://doi.org/10.1161/CIR.0000000000001376</a>
                 </div>
 
+                <!-- 2. AHA Post-Cardiac Arrest Care -->
                 <div class="apa-citation">
                     American Heart Association. (2025). <em class="text-cyan-300">Adult post-cardiac arrest care algorithm: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care</em>. American Heart Association. <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline hover:text-cyan-300 break-all font-mono">https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support</a>
                 </div>
 
+                <!-- 3. ILCOR CoSTR 2025 -->
                 <div class="apa-citation">
                     International Liaison Committee on Resuscitation. (2025). 2025 International consensus on cardiopulmonary resuscitation and emergency cardiovascular care science with treatment recommendations. <em class="text-cyan-300">Circulation</em>, <em class="text-cyan-300">152</em>(16_Suppl_1), S1–S320. <a href="https://doi.org/10.1161/CIR.0000000000001370" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline hover:text-cyan-300 break-all font-mono">https://doi.org/10.1161/CIR.0000000000001370</a>
                 </div>
             </div>
         </section>
 
+        <!-- ================= 著作權與嚴禁轉貼聲明 ================= -->
         <section class="print-card bg-gradient-to-r from-rose-950/60 via-slate-900 to-amber-950/50 border-2 border-rose-500/60 rounded-3xl p-4 sm:p-5 shadow-2xl">
             <div class="flex items-start gap-3">
                 <div class="w-8 h-8 rounded-xl bg-rose-600/30 text-rose-400 border border-rose-500/50 flex items-center justify-center text-sm shrink-0 mt-0.5">
@@ -567,6 +604,7 @@
             </div>
         </section>
 
+        <!-- ================= 口袋卡頁尾版權 ================= -->
         <footer class="print-card bg-clinical-card border border-clinical-border rounded-2xl p-3 text-center text-xs text-slate-400">
             <div class="flex flex-wrap items-center justify-center gap-2">
                 <span>ACLS 2025 重點流程全集隨身一卡包</span>
@@ -580,6 +618,7 @@
 
     </main>
 
+    <!-- 浮動安全版權提示通知 (HUD Toast) -->
     <div id="securityToast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 translate-y-4">
         <div class="bg-rose-950/95 border-2 border-rose-500 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 backdrop-blur-md">
             <i class="fa-solid fa-triangle-exclamation text-amber-400 text-lg"></i>
@@ -590,6 +629,7 @@
         </div>
     </div>
 
+    <!-- ===== JavaScript: 防複製、防右鍵、防截圖、剪貼簿淨化防護系統 ===== -->
     <script>
         let toastTimeout;
         function showSecurityWarning() {
@@ -604,12 +644,14 @@
             }, 2500);
         }
 
+        // 1. 禁用滑鼠右鍵點擊
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
             showSecurityWarning();
             return false;
         });
 
+        // 2. 攔截常見快捷鍵 (F12, Ctrl+C, Ctrl+X, Ctrl+U, Ctrl+S, Ctrl+A)
         document.addEventListener('keydown', function(e) {
             if (e.key === 'F12' || e.keyCode === 123) {
                 e.preventDefault();
@@ -631,6 +673,7 @@
             }
         });
 
+        // 3. 剪貼簿防護
         document.addEventListener('copy', function(e) {
             e.preventDefault();
             showSecurityWarning();
@@ -640,11 +683,13 @@
             }
         });
 
+        // 4. 禁用拖曳選取文字
         document.addEventListener('selectstart', function(e) {
             e.preventDefault();
             return false;
         });
 
+        // 5. 授權列印通道
         function authorizedPrint() {
             window.print();
         }
